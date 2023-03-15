@@ -1,0 +1,565 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+/* HEADER START */
+.nav-con{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background: rgb(240, 237, 231);
+    z-index: 99;
+}
+.nav-con .navbar{
+    width: 80%;
+}
+.nav-con .navbar-brand{
+    width: 20%;
+    height: 50px;
+    position: relative;
+}
+.nav-con img{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: -4px;
+}
+ /* HEADER END */
+
+/* MAİN START */
+.main-con{
+    width: 100%;
+    height: 480vh;
+    background: rgb(240, 237, 231);    
+    position: relative;
+    top: 0;
+}
+/* CONTANİER-1 START */
+.contanier-1{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.contanier-1 .fluid-con-1{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.contanier-1 .con-1{
+    width: 485px;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;   
+}
+.contanier-1 .con-1 .pad-1{
+    width: 250px;    
+    text-align:left;
+}
+.contanier-1 .con-1 .pad-1 h1{
+    font-size: 45px;
+}
+.contanier-1 .con-1 .pad-2{
+    width: 485px;
+    text-align: left;    
+}
+.contanier-1 .con-1 .pad-2 p{
+    font-size: 18px;
+}
+.contanier-1 .con-1 .input{
+    width: 489px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.input .form-control{
+    width: 498px;
+    height: 73px;
+    border: 2px solid #0D6EFD;    
+}
+.contanier-1 .con-2{
+    width: 442px;
+    height: 463px;
+    position: relative;
+}
+.contanier-1 .con-2 img{
+    width: 100%;
+    
+}
+/* CONTANİER-1 END */
+/* CONTANİER-2 START */
+.contanier-2{
+    width: 100%;
+    height: 545px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+.contanier-2 .fluid-con-2{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.contanier-2 .fluid-con-2 .con-1 .pad-1{
+    text-align: center;
+    width: 1080px;
+    height: 100px;
+}
+.contanier-2 .fluid-con-2 .con-1 .pad-1 h3{
+    font-size: 22px;
+}
+.contanier-2 .fluid-con-2 .con-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contanier-2 .fluid-con-2 .con-2 .card{
+    align-items: center;
+    border: none;
+    background: transparent;
+}
+.contanier-2 .fluid-con-2 .con-2 .card a{
+    text-decoration: none;
+    color: #0D6EFD
+}
+.contanier-2 .fluid-con-2 .con-2 .card a:hover{
+    color: white;
+}
+/* CONTANİER-2 END */
+/* CONTANİER-3 START */
+.contanier-3{
+    width: 100%;
+    height: 813px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 550px;
+}
+.contanier-3 .fluid-con-3{
+    width: 80%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.contanier-3 .fluid-con-3 .con-1{
+    width: 321px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contanier-3 .fluid-con-3 .con-2{
+    width: 50%;
+    
+}
+.contanier-3 .fluid-con-3 .con-2 img{
+    width: 100%;
+    height: 100%;
+}
+/* CONTANİER-3 END */
+
+/* CONTANİER-4 START */
+.contanier-4{
+    width: 100%;
+    height: 813px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 550px;
+}
+.contanier-4 .fluid-con-4{
+    width: 80%;
+}
+.contanier-4 .fluid-con-4 .pad-1{
+    text-align: center;
+}
+.contanier-4 .fluid-con-4 .row{
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contanier-4 .fluid-con-4 .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contanier-4 .fluid-con-4 .row .col .card{
+    border: none;
+    background: transparent;
+}
+/* CONTANİER-4 END */
+/* CONTANİER-5 START */
+.contanier-5{
+    width: 100%;
+    position: relative;
+    top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contanier-5 .fluid-con-5{
+    width: 80%;
+}
+.home-demo{
+    text-align: center;
+}
+.home-demo .item {
+    background: transparent;
+    border: none;
+}
+.home-demo .item .card{
+    background: transparent;
+    height: 300px;
+}
+.home-demo .item .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.owl-prev, .owl-next{
+    display: flex;
+    position: absolute;
+    transform: scale(4) !important;
+}
+.owl-prev{
+    top: 70px;
+    left: 0;
+}
+.owl-next{
+    top: 70px;
+    right: 0;
+}
+.owl-prev:hover,.owl-next:hover{
+    background: rgb(194, 113, 113) !important;
+}
+/* CONTANİER-5 END */
+/* CONTANİER-6 START */
+.contanier-6{
+    width: 100%;
+    position: relative;
+    top: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contanier-6 .fluid-con-6{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contanier-6 .fluid-con-6 .pad-1{
+    width: 450px;
+}
+.contanier-6 .fluid-con-6 .pad-1 h1{
+    width: 200px;
+    font-size: 60px;
+}
+.contanier-6 .fluid-con-6 .pad-1 p{
+    width: 400px;
+    font-size: 20px;
+}
+.contanier-6 .fluid-con-6 .accordion-con{
+    width: 610px;
+}
+/* CONTANİER-6 END */
+
+/* MAİN END */
+
+/* FOOTER START */
+.foot-con{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -70px;
+    width: 100%;
+    background: rgb(240, 237, 231);
+}
+.fluid-foot{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-con .foot .p-div{
+    display: flex;
+    justify-content: center;
+}
+.foot-con .foot .p-div a{
+    color: #0D6EFD;
+}
+.foot-con .ul-con{
+    display: flex;
+    justify-content: center;
+}
+.foot-con .ul-con ul{
+    width: 100%;
+}
+.foot-con .ul-con ul li{
+    width: 300px;
+}
+.foot-con .ul-con ul li a{
+    padding-left: 13px;
+}
+.foot-con .ul-con ul li a h6{
+    background: #0D6EFD;
+    color: white;
+    text-align: center;
+}
+.foot-con .ul-con ul li a p{
+    text-align: center;
+    color: #0D6EFD;
+}
+
+/* FOOTER END */
+@media screen and (max-width:1600px){
+    .main-con{
+        height: 560vh;
+    }
+    
+}
+@media screen and (max-width:1300px){
+    .main-con{
+        height: 630vh;
+    }
+}
+@media screen and (max-width:1200px) {
+    .main-con{
+        height: 650vh;
+    }
+    .contanier-3{
+        top: 700px;
+    }   
+}
+@media screen and (max-width:1100px) {
+    .main-con{
+        height: 770vh;
+    }
+    .contanier-1{
+        top: 100px;
+    }
+    .fluid-con-1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contanier-1 .fluid-con-1 .con-2{
+        width: 100%;
+    }
+    .contanier-2{
+        top: 700px;
+    }
+    .contanier-3{
+        top: 1450px;
+    }
+    .fluid-con-3{
+        flex-direction: column;
+    }
+    .contanier-3 .fluid-con-3 .con-2{
+        width: 100%;
+    }
+    .contanier-4{
+        top: 1550px;
+    }
+    .contanier-5{
+        top: 1500px;
+    }
+    .contanier-6{
+        top: 1550px;
+    }
+    .fluid-con-6{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contanier-6 .fluid-con-6 .accordion-con{
+        width: 100%;
+    }
+    .contanier-6 .fluid-con-6 .pad-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contanier-6 .fluid-con-6 .pad-1 h1{
+        text-align: center;
+        width: 100%;
+    }
+    .contanier-6 .fluid-con-6 .pad-1 p{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:991px){
+    .main-con{
+        height: 900vh;
+    }
+    .contanier-1{
+        top: 300px;
+    }
+    .contanier-2{
+        top: 800px;
+    }
+    .contanier-2 .fluid-con-2 .con-1 .pad-1{
+        width: 500px;
+    }
+    .contanier-2 .fluid-con-2 .con-3 .pad-2{
+        display: flex;
+        justify-content: center;
+    }
+    .contanier-2 .fluid-con-2 .con-3 .pad-2{
+        width: 500px;
+    }
+    .contanier-3{
+        top: 1800px;
+    }
+    .contanier-4{
+        top: 1900px;
+    }
+    .contanier-4 .fluid-con-4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contanier-4 .fluid-con-4 .pad-1{
+        text-align: center;
+        width: 500px;
+    }
+    .contanier-5{
+        top: 2300px;
+    }
+    .contanier-5 .item{
+        display: flex;
+        justify-content: center;
+    }
+    .contanier-5 .item .card{
+        width: 700px;
+    }
+    .contanier-6{
+        top: 2400px;
+    }
+}
+@media screen and (max-width:767px){
+    .main-con{
+        height: 980vh;
+    }
+    .contanier-3{
+        top: 1700px;
+    }
+    .contanier-4{
+        top: 1800px;
+    }
+    .contanier-4 .col{
+        width: 100%;
+        height: 700px;
+    }
+    .contanier-4 .fluid-con-4 .col-md-7{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contanier-5{
+        top: 2800px;
+    }
+    .contanier-5 .item .card{
+        width: 500px;
+    }
+    .contanier-6{
+        top: 2900px;
+    }
+}
+@media screen and (max-width:575px) {
+.nav-con .navbar-brand{
+    width: 150px;
+}
+    .main-con{
+        height: 1100vh;
+    }
+   .contanier-1 .fluid-con-1 .con-1{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-1 .fluid-con-1 .con-1 .pad-1{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-1 .fluid-con-1 .con-1 .pad-1 h1{
+    font-size: 32px;
+   }
+   .contanier-1 .fluid-con-1 .con-1 .pad-2{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-1 .fluid-con-1 .con-1 .pad-2 p{
+    font-size: 16px;
+   }
+   .contanier-1 .fluid-con-1 .con-1 .input{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-2{
+    top: 500px;
+   }
+   .contanier-2 .fluid-con-2 .con-1 .pad-1{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-2 .fluid-con-2 .con-3 .pad-2{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-3{
+    top: 2600px;
+   }
+   .contanier-3 .fluid-con-3 .con-1{
+    width: 100%;
+   }
+   .contanier-3 .fluid-con-3 .con-1 .pad-1{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-3 .fluid-con-3 .con-1 .pad-2{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-4{
+    top: 2500px;
+   }
+   .contanier-4 .fluid-con-4 .pad-1{
+    width: 100%;
+    text-align: center;
+   }
+   .contanier-5{
+    top: 3600px;
+   }
+   .contanier-6{
+    top: 3700px;
+   }  
+}
