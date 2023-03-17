@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Netflix Proje</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        /* HEADER START */
+        /* HEADER END */
+
+        /* MAİN START */
+        .contanier-main{
+            width: 100%;
+            height: 257vh;
+            background: #000;
+            z-index: 0;
+            position: relative;
+        }
+        .main-con{
+            width: 100%;
+            height: 75vh;
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .shadow{
+            width: 100%;
+            height: 85vh;
+            position: absolute;
+            background: #00000062;
+            z-index: -5;
+        }
+        .d-img{
+            width: 100%;
+            height: 85vh;
+            position: absolute;
+            z-index: -10;
+            overflow: hidden;
+        }
+        .d-img img{
+            width: 100%;
+            height: 100vh;
+        }
+        /* MAİN END */
+
+        /* FOOTER START */
+        .ul-con ul li a{
+            color: gray;
+        }
+        .foot-link p{
+            color: gray;
+        }
+        /* FOOTER END */
+        /* MEDİA START */
+        @media screen and(max-width:1040px){
+            .contanier-main{
+                width: 50%;
+            }
+            .baslik-con{
+                width: 100px;
+            }
+        }
+
+            
+        
+        /* MEDİA END */
+    </style>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <nav class="navbar bg-transparent position-absolute z-1 top-0 w-100" style="height: 100px;">
+            <div class="container-fluid ">
+                <!-- NETFLİX LOGO START -->
+                <div class="logo-con overflow-hidden position-relative" style="width: 166px; height: 45px; left: 0;">
+                    <a class="navbar-brand object-fit-contain position-absolute" href="" style="z-index: 1; width: 166px; height: 45px; top: -80px; left: -10px;">
+                        <img style="width: 190px;" src="img/netflix_logo.png" alt="netflix_logo">
+                    </a>
+                </div>
+                <!-- NETFLİX LOGO END -->                
+                
+                <div class="sing-con d-flex justify-content-around" style="width: 300px;">
+                    <!-- SELECT  START -->      
+                    <div class="fluid-slct">         
+                        <div class="slct-div position-relative" style=" border: 1px solid white; width: 94px; height: 38px; background: #000;">
+                            <div class="word position-absolute" style="top: 4px; left: 2px;">
+                                <img src="img/world.png" alt="">
+                            </div>
+                            <div class="slct">
+                                <select class="form-select position-absolute" style="top: 5px; left: 0; width: 100%; border: 0 ; padding: 0;  background: transparent; color: white; text-align: center; z-index: 1; text-decoration: none;"  aria-label="Default select example">                        
+                                    <option style="background: gray;" selected value="1">Türkçe</option>
+                                    <option style="background: gray;" value="2">English</option>
+                                </select>
+                            </div>
+                            <div class="arrow position-absolute" style="top: 3px; left: 67px;" >
+                                <img style="width: 30px;height: 30px; " src="img/cursor-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                    </div>    
+                <!-- SELECT  END -->
+                <!-- SİGN START -->
+                <form class="d-flex" style="width: 113px; height: 38px;" role="search">
+                    <button class="btn btn-danger" style="border-radius: 4px;" type="submit"><a style="text-decoration: none; color: white;" href="login.html">Oturum Aç</a></button>
+                </form>
+                <!-- SİGN END -->+
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAİN START -->
+
+    
+    <main>
+        <div class="contanier-main">
+            <div class="main-con">
+                <div class="shadow"></div>
+                <div class="d-img">
+                    <img src="img/arkaplan.jpg" alt="">
+                </div>
+                <div class="baslik-con ">
+                    <div class=" baslik position-relative text-white text-center d-flex flex-column align-items-center justify-content-center" style="z-index: 1; width: 950px; height: 493px;">
+                        <h1 class="mb-4" style="width: 800px; height: 141px; font-weight: 700; font-size: 60px;">Sınırsız film, dizi ve çok daha fazlası.</h1>
+                        <h4 class="mb-4" style="width: 800px;">İstediğiniz yerde izleyin. İstediğiniz zaman iptal edin.</h4>
+                        <p class="mb-4" style="width: 800px;">İzlemeye hazır mısınız? Üyelik oluşturmak veya üyeliğinize erişmek için e‑posta adresinizi girin.</p>
+                        <form class="row g-3">    
+                            <div class="col-auto p-0" style=" width: 500px; height: 70px;">
+                              <label for="inputPassword2" class="visually-hidden">E-posta adresi</label>
+                              <input type="password" style="border-radius: 0; height: 70px;" class="form-control" id="inputPassword2" placeholder="E-posta adresi">
+                            </div>
+                            <div class="col-auto p-0">
+                              <button type="submit" style=" border-radius: 0;width: 202px; height: 70px;" class="p-0 btn btn-danger">
+                                <p style="margin: 0; font-size: xx-large;"><a style="color: white; text-decoration: none;" href="login.html">Başlayın</a></p>
+                            </button>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="mail"></div>
+                </div>
+            </div>
+            <!-- PAGE-1 START -->            
+            <div class="page-1 w-100 position-relative" style="top: 770px; border: 5px solid rgb(87, 85, 85);">
+                <div class="page1-con w-100 d-flex justify-content-center align-items-center">
+                    <div class="page1-p text-start text-white" style="font-size: 30px; width: 547px; height: 250px;">
+                        <h1 style="font-size: 46px;">Televizyonunuzda izleyebilirsiniz.</h1>
+                        <p>Akıllı TV, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray oynatıcılar ve daha fazlasında seyredin.</p>
+                    </div>
+                    <div class="page1-vid position-relative">
+                        <img src="img/resim1.png" width="530" height="420" alt="">
+                        <video loop autoplay muted style="width: 410px; height: 350px; position: absolute; top: 25px; left: 57px; z-index: -1;" src="video/WhatsApp Video 2023-03-01 saat 13.29.39.mp4"></video>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE-1 END -->
+            <!-- PAGE-2 START -->
+            <div class="page-2 w-100 position-relative d-flex justify-content-center" style="top: 770px; border: 5px solid rgb(87, 85, 85);">
+                <div class="page2-vid position-relative">
+                    <img src="img/resim2.jpg" width="530" height="420" alt="">
+                    <div class="small-img-con bg-black d-flex position-absolute justify-content-around align-items-center m-0 p-0" style="left: 100px; top: 260px; border: 1px solid gray; border-radius: 10px; width: 331px; height: 110px;">
+                        <div class="small-img">
+                            <img src="img/WhatsApp Görsel 2023-03-01 saat 13.29.30.jpg" width="57" height="70" alt="">
+                        </div>
+                        <div class="small-img-p">
+                            <h6 style="color: white;">Stranger Things</h6>
+                            <p style="color: blue;">İndiriliyor...</p>
+                        </div>
+                        <div class="small-img-gif">
+                            <img src="img/download-icon.gif" width="48" height="48" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="page2-con d-flex justify-content-center align-items-center">
+                    <div class="page2-p text-start text-white" style="font-size: 30px; width: 547px; height: 250px;">
+                        <h1 style="font-size: 46px;">Çevrimdışı izlemek için içerikleri indirin.</h1>
+                        <p>En sevdiğiniz içerikleri kolayca kaydedin ve her zaman izleyecek bir şeyleriniz olsun.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE-2 END -->
+            <!-- PAGE-3 START -->
+            <div class="page-3 w-100 position-relative" style="top: 770px; border: 5px solid rgb(87, 85, 85);">
+                <div class="page3-con w-100 d-flex justify-content-center align-items-center">
+                    <div class="page3-p text-start text-white" style="font-size: 30px; width: 547px; height: 250px;">
+                        <h1 style="font-size: 46px;">İstediğiniz her yerde izleyin.</h1>
+                        <p>Ekstra ücret ödemeden telefonda, tablette, bilgisayarda, televizyonda sınırsız film ve dizi izleyin.</p>
+                    </div>
+                    <div class="page3-vid position-relative">
+                        <img src="img/resim3.png" width="550" height="420" alt="">
+                        <video loop autoplay muted style="width: 350px; height: 350px; position: absolute; top: -30px; left: 95px; z-index: -1;" src="video/WhatsApp Video 2023-03-01 saat 13.29.30.mp4"></video>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE-3 END -->
+            <!-- PAGE-4 START -->
+            <div class="page-4 w-100 position-relative d-flex justify-content-center " style="top: 770px; border: 5px solid rgb(87, 85, 85);">
+                <div class="page4-vid position-relative">
+                    <img src="img/resim4.png" width="530" height="420" alt="">
+                    <video style="width: 410px; height: 350px; position: absolute; top: 25px; left: 57px; z-index: -1;" src="video/WhatsApp Video 2023-03-01 saat 13.29.30.mp4"></video>
+                </div>
+                <div class="page4-con d-flex justify-content-center align-items-center">
+                    <div class="page4-p text-start text-white" style="font-size: 30px; width: 547px; height: 250px;">
+                        <h1 style="font-size: 46px;">Çocuklarınız için profiller oluşturun.</h1>
+                        <p>Üyeliğinize dâhil olan bu ücretsiz deneyim sayesinde çocuklarınız, sadece onlara özel bir alanda en sevdikleri karakterlerle maceralara atılabilir.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE-4 END -->         
+        </div>
+    </main>
+    <!-- MAİN END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div class="foot-con position-relative  align-items-center bg-black d-flex justify-content-center w-100" style="z-index: 0; height: 800px; width: 950px; border: 5px solid gray; top: -5px;">
+            <div class="foot py-5 position-absolute z-1" style="top: 0;">
+                <h1 class="text-white text-center pb-5" style="width: 815px; font-size: 52px;">Sıkça Sorulan Sorular</h1>
+                <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 815px;">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" style="color: white; font-size: 32px; background: rgb(48, 46, 46);" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Netflix Nedir?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="color: white; font-size: 32px; background: rgb(48, 46, 46);">Netflix; internet bağlantılı binlerce cihazda ödüllü diziler, filmler, animeler, belgeseller ve daha fazlasını içeren geniş bir arşiv sunan bir streaming hizmetidir. <br> <br>
+
+                            Tek bir reklam olmadan, istediğiniz kadar, istediğiniz zaman izleyebilirsiniz - hepsi aylık düşük bir ücret karşılığında. Her zaman keşfedilecek yeni bir şeyler var, üstelik her hafta yeni diziler ve filmler ekleniyor!</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" style="color: white; font-size: 32px; background: rgb(48, 46, 46);" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Netflix'in maliyeti nedir?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="color: white; font-size: 32px; background: rgb(48, 46, 46);">Netflix'i akıllı telefonunuz, tabletiniz, Akıllı TV'niz, dizüstü bilgisayarınız veya yayın cihazınızda sabit bir aylık ücretle izleyin. Aylık plan ücretleri 63,99 TL ile 130,99 TL arasında değişmektedir. Ekstra maliyet yok, sözleşme yok.</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" style="color: white; font-size: 32px; background: rgb(48, 46, 46);" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Nerede izleyebilirim?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="color: white; font-size: 32px; background: rgb(48, 46, 46);">İstediğiniz yerde, istediğiniz zaman izleyin. Bilgisayarınızda netflix.com adresinden veya akıllı TV'ler, akıllı telefonlar, tabletler, medya oynatıcılar ve oyun konsolları dahil Netflix uygulamasını sunan, internet bağlantılı herhangi bir cihazda anında izlemek için Netflix hesabınızla oturum açın.
+                            <br><br>
+                            Favori içeriklerinizi iOS, Android veya Windows 10 uygulamasıyla da indirebilirsiniz. Seyahatteyken ve internet bağlantısı olmadan izlemek için indirilenleri kullanın. Netflix'i her yere beraberinizde götürün.</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading4">
+                        <button class="accordion-button collapsed" style="color: white; font-size: 32px; background: rgb(48, 46, 46);" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                            Nasıl iptal ederim?
+                        </button>
+                        </h2>
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="color: white; font-size: 32px; background: rgb(48, 46, 46);">Netflix esnektir. Sinir bozucu hiçbir sözleşme ve taahhüt yoktur. Hesabınızı çevrimiçi olarak iki tıklamayla kolayca iptal edebilirsiniz. İptal ücreti yoktur - hesabınızı istediğiniz zaman başlatın veya durdur4</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading5">
+                        <button class="accordion-button collapsed" style="color: white; font-size: 32px; background: rgb(48, 46, 46);" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                            Netflix'te ne izleyebilirim?
+                        </button>
+                        </h2>
+                        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="color: white; font-size: 32px; background: rgb(48, 46, 46);">Netflix; internet bağlantılı binlerce cihazda ödüllü diziler, filmler, animeler, belgeseller ve daha fazlasını içeren geniş bir arşiv sunan bir streaming hizmetidir. <br> <br>
+                            Netflix, uzun metrajlı filmler, belgeseller, diziler ve programlar, anime, ödüllü Netflix orijinal içerikleri ve daha fazlasından oluşan kapsamlı bir kütüphaneye sahiptir. İstediğiniz her zaman, istediğiniz kadar çok şey izleyin.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading6">
+                        <button class="accordion-button collapsed" style="color: white; font-size: 32px; background: rgb(48, 46, 46);" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                            Netflix çocuklar için uygunmudur?
+                        </button>
+                        </h2>
+                        <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="color: white; font-size: 32px; background: rgb(48, 46, 46);">Netflix; internet bağlantılı binlerce cihazda ödüllü diziler, filmler, animeler, belgeseller ve daha fazlasını içeren geniş bir arşiv sunan bir streaming hizmetidir. <br> <br>
+                            Üyeliğinize dâhil olan Netflix Çocuk deneyimi, çocukların ailece izlenebilecek dizi ve filmleri kendilerine özel bir alanda izlemelerini sağlarken kontrolü ebeveynlere verir.
+                            <br>
+                            Çocuk profillerinde bulunan PIN korumalı ebeveyn kontrolleri sayesinde, çocukların izleyebileceği içeriklerin yetişkinlik düzeylerini kısıtlayabilir ve onların görmesini istemediğiniz belirli içerikleri engelleyebilirsiniz.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- asd -->               
+                <!-- asd -->
+                <div class="baslik-con ">
+                    <div class=" baslik text-white text-center d-flex flex-column align-items-center justify-content-center my-5" style="width: 815px; height: 138px;">
+                        <p class="mb-4" style="width: 800px;">İzlemeye hazır mısınız? Üyelik oluşturmak veya üyeliğinize erişmek için e‑posta adresinizi girin.</p>
+                        <form class="row g-3">    
+                            <div class="col-auto p-0 form-floating" style="color: #000; width: 500px; height: 70px;">
+                              <input type="email" style="border-radius: 0; height: 70px;" class="form-control" id="floatingInput" placeholder="E-posta adresi">
+                              <label for="floatingInput">E-posta adresi</label>
+                            </div>
+                            <div class="col-auto p-0">
+                              <button type="submit" style=" border-radius: 0;width: 202px; height: 70px;" class="p-0 btn btn-danger">
+                                <p style="margin: 0; font-size: xx-large;"><a style="color: white; text-decoration: none;" href="login.html">Başlayın</a></p>
+                            </button>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="mail"></div>
+                </div>                
+            </div>
+
+            <div class="foot-link-con bg-black d-flex justify-content-center align-items-center position-relative w-100   p-0 m-0" style=" z-index: 1; border: 5px solid gray; height: 350px; left: -5px; top: 575px;">
+                <div class="foot-link" style="width: 1050px; height: 300px;">
+                <div class="p-div"><p style="color: gray; ">Sorularınız mı var? 0850-390-7444 numaralı telefonu arayın</p></div>
+                    <div class="row ul-con d-flex justify-content-center text-start" style="width: 900px;">
+                        <ul class="nav w-100 " >
+                            <li class="nav-item w-25">
+                            <a class="nav-link" style="padding-left: 13px ;"  href="#"><small>SSS</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                            <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Yardım Merkezi</small></a>
+                            </li> 
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Hesap</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Medya Merkezi</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Yatırımcı İlişkileri</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>İş İmkanları</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Hediye Kartı Kullan</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>İzleme Yolları</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Kullanım Koşulları</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Gizlilik</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Çerez Tercihleri</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Kurumsal Bilgiler</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Bize Ulaşın</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Hız Testi</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Yasal Hükümler</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Sadece Netflix'te</small></a>
+                            </li>                        
+                        </ul>
+                    </div>
+                    <div class="slct-div" style="position: relative;">
+                        <div class="word" style="position: absolute; top: 10px; left: 5px;">
+                            <img src="img/world.png" alt="">
+                        </div>
+                        <div class="slct" style="position: absolute; background: transparent;">
+                            <select class="form-select" style="width: 112px; height: 48px; padding-left: 23px; background: transparent; color: gray;"  aria-label="Default select example">                        
+                                <option selected value="1">Türkçe</option>
+                                <option value="2">English</option>
+                            </select>
+                        </div>
+                        <div class="arrow" style="position: absolute; top: 10px; left: 75px; background: transparent;" >
+                            <img style="width: 30px;height: 30px; " src="img/cursor-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                    <p style="position: absolute; top: 270px;">Netflix Türkiye</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

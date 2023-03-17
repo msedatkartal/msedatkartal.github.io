@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Login</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        small{
+            color: gray;
+        }
+        /* HEADER START */
+        .logo{
+            width: 100%;
+            height: 90px;
+            position: absolute;
+            overflow: hidden;
+        }
+        .logo img{
+            height: 200px;
+            width: 167px;
+            object-position: 15px -50px;
+            top: -50;
+            left: 0;
+        }
+        /* HEADER END */
+
+        /* MAİN START */
+       .arkaplan-div{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .arkaplan-con{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -5;
+
+       }
+        .shadow{
+        width: 100%;
+        height: 140vh;
+        background: #000000c5 !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -5;
+        box-shadow: inset 0px 60px 80px 0px black;
+       }
+       .arkaplan-con img{
+        width: 100%;
+        height: 140vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+       }
+       .arkagri{
+        padding: 70px 85px;
+        background: rgba(7, 7, 7, 0.904);
+       }
+       .border{
+        border-radius: none;
+       }
+        /* MAİN END */
+
+        /* FOOTER START */
+        .foot-con{
+            width: 100%;           
+            height: 30vh;
+            position: absolute;
+            top: 900px;
+            background: rgba(0, 0, 0, 0.527);
+        }
+        /* FOOTER END */
+        @media screen and (max-width:739px){
+            .shadow{
+                background: black !important;
+            }
+            input{
+                width: 100%;
+            }
+            .arkagri{
+                background: black;
+            }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="con-logo">
+            <div class="logo bg-transparent z-1">
+                <img src="img/netflix_logo.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-con">
+            <div class="row p-0 m-0 arkaplan-div">
+                    <div class="arkaplan-con">
+                        <div class="shadow"></div>
+                        <img src="img/arkaplan.jpg" alt="">
+                    </div>
+                <div class=" arkagri col-xxl-3 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-12" style="width: 500px;">
+                    <div class=" form d-flex justify-content-center align-items-center">
+                        <form>
+                            <div class="oturum"><h2 class="h2" style="color:white;">Oturum Aç</h2></div>
+                            <div class="form-floating mt-3">
+                              <input type="email" placeholder="E-posta veya Telefon Numarası" class="form-control bg-secondary " id="floatingInput" aria-describedby="emailHelp" style="border-radius: 4px !important; padding: 1.3vh;">                              
+                              <label for="floatingInput" class="form-label" >E-posta veya Telefon Numarası</label>
+                            </div>
+                            <div class="form-floating mt-3">
+                              <input type="password" placeholder="Parola" class="form-control bg-secondary" id="floatingPassword" style="border-radius: 4px !important; padding: 1.3vh;">
+                              <label for="floatingPassword" class="form-label">Parola</label>
+                            </div>                            
+                            <button type="submit" class="btn btn-danger mt-5 w-100" style="border-radius: 3px !important; padding: 1.3vh;"> <a class="a" style=" text-decoration: none; color: white;" href="anasayfa.html">Oturum Aç</a></button>
+                            <div class="help-con d-flex justify-content-between">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" style="color: gray;" for="exampleCheck1"><small>Beni Hatırla</small></label>
+                                </div>
+                                <div class="help"> <small><a style="text-decoration: none
+                                ; color: gray;" href="">Yardım ister misiniz?</a></small></div>
+                            </div>
+                            <div class="info">
+                                <p class="mt-5" style="color: gray;">Netflix'e katılmak ister misiniz? <a href="" style="text-decoration: none; color: white;">Şimdi kaydolun..</a></p>
+                                <p style="color: gray;">Bu sayfa robot olmadığınızı kanıtlamak için Google reCAPTCHA tarafından korunuyor. Daha fazlasını öğrenin.</p>
+                            </div>
+                          </form>
+                    </div>                    
+                </div>           
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot-con d-flex justify-content-center align-items-center flex-column" style="width: 100%;">
+            <div class="foot">
+                <div class="p-div"><p style="color: gray; ">Sorularınız mı var? 0850-390-7444 numaralı telefonu arayın</p></div>
+                    <div class="row ul-con d-flex justify-content-center">
+                        <ul class=" nav w-100 " >
+                            <li class="nav-item w-25">
+                            <a class="nav-link" style="padding-left: 13px ;"  href="#"><small>SSS</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                            <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Yardım Merkezi</small></a>
+                            </li> 
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Kullanım Koşulları</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Gizlilik</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Çerez Tercihleri</small></a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Kurumsal Bilgiler</small></a>
+                            </li>                        
+                        </ul>
+                    </div>
+                    <div class="slct-div" style="position: relative;">
+                        <div class="word" style="position: absolute; top: 10px; left: 5px;">
+                            <img src="img/world.png" alt="">
+                        </div>
+                        <div class="slct" style="position: absolute; background: transparent;">
+                            <select class="form-select" style="width: 112px; height: 48px; padding-left: 23px; background: transparent; color: gray;"  aria-label="Default select example">                        
+                                <option selected value="1">Türkçe</option>
+                                <option value="2">English</option>
+                            </select>
+                        </div>
+                        <div class="arrow" style="position: absolute; top: 10px; left: 75px; background: transparent;" >
+                            <img style="width: 30px;height: 30px; " src="img/cursor-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+            </div>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

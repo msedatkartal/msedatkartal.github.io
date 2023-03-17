@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
+    <title>Anasayfa</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: o;
+            margin: 0;
+        }
+        small{
+          color: gray;
+        }
+        .collapse ul li a{
+          color: whitesmoke;
+        }
+        /* CAROSEL START */
+        .home-demo .item {
+            background: #3f49ff;
+        }
+        .home-demo h2 {
+            color: #FFF;
+            text-align: center;
+            padding: 5rem 0;
+            margin: 0;
+            font-style: italic;
+            font-weight: 300;            
+        }
+
+        .owl-prev, .owl-next{
+            display: flex;
+            position: absolute;
+            transform: scale(4) !important;
+        }
+        .owl-prev{
+            top: 70px;
+            left: 0;
+        }
+        .owl-next{
+            top: 70px;
+            right: 0;
+        }
+        .owl-prev:hover,.owl-next:hover{
+            background: rgb(0, 0, 0) !important;
+        }
+        /* CAROSEL END */
+
+        .dropdown-menu-end li a{
+          color: white;
+        }
+        /* MEDİA START */
+        @media screen and (max-width:1330px) {
+          .home-demo{
+            position: relative;
+            top: 200px;
+          }
+          .card-body{
+            width: 500px;         
+          }
+          .contanier{
+            position: absolute;
+            top: 0;
+            width: 100px;;
+          }
+          .home-demo{
+            height: 300px;
+          }
+        }
+        @media screen and (max-width:680px){
+          .carosel-con{
+            margin-top: 100px;
+          }
+        }
+          
+        
+          
+        
+        /* MEDİA END */
+    </style>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent w-100 position-absolute z-2">
+            <div class="container-fluid d-flex justify-content-between align-items-center px-5 text-white">
+              <div class="nav-right d-flex ">
+              <!-- Netflix Logo Start -->
+              <div class="logo-svg">         
+              <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="93" height="25" viewBox="0 0 1024 276.742"><path d="M140.803 258.904c-15.404 2.705-31.079 3.516-47.294 5.676l-49.458-144.856v151.073c-15.404 1.621-29.457 3.783-44.051 5.945v-276.742h41.08l56.212 157.021v-157.021h43.511v258.904zm85.131-157.558c16.757 0 42.431-.811 57.835-.811v43.24c-19.189 0-41.619 0-57.835.811v64.322c25.405-1.621 50.809-3.785 76.482-4.596v41.617l-119.724 9.461v-255.39h119.724v43.241h-76.482v58.105zm237.284-58.104h-44.862v198.908c-14.594 0-29.188 0-43.239.539v-199.447h-44.862v-43.242h132.965l-.002 43.242zm70.266 55.132h59.187v43.24h-59.187v98.104h-42.433v-239.718h120.808v43.241h-78.375v55.133zm148.641 103.507c24.594.539 49.456 2.434 73.51 3.783v42.701c-38.646-2.434-77.293-4.863-116.75-5.676v-242.689h43.24v201.881zm109.994 49.457c13.783.812 28.377 1.623 42.43 3.242v-254.58h-42.43v251.338zm231.881-251.338l-54.863 131.615 54.863 145.127c-16.217-2.162-32.432-5.135-48.648-7.838l-31.078-79.994-31.617 73.51c-15.678-2.705-30.812-3.516-46.484-5.678l55.672-126.75-50.269-129.992h46.482l28.377 72.699 30.27-72.699h47.295z" fill="#d81f26"/></svg>
+              </a>
+            </div>
+              <!-- Netflix Logo End -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span style="color: white;" class="">Göz At</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a style="color: white;" class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#">Diziler</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#">Filmler</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#">Yeni ve Popüler</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#">Listem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dile Göre Göz At</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="nav-left d-flex">
+                    <form class="d-flex justify-content-center align-items-center " role="search">
+                      <div class="btn-group dropstart">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                        </button>
+                        <ul class="dropdown-menu p-0 h-100">
+                            <form class="d-flex" role="search">
+                              <input class="form-control p-0 h-100" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                          </a>
+                        </ul>
+                      </div>
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="Right-aligned menu">
+                              <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                              </svg>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" style=" background: rgba(0, 0, 0, 0.726);">
+                              <a style="text-decoration: none;" href="">
+                                <div class="kard d-flex align-content-center px-1  border: 1px solid gray;" style="width: 500px; height: 120px; ">
+                                  <div class="kard-img" style="width: 220px;">
+                                    <img src="img/witcher.jpg" alt="" style="width: 200px;">
+                                  </div>
+                                  <div class="kard-hakkinda text-start">
+                                    <h6 style="color: white;">Yeni İçerik</h6>
+                                    <P style="color: white;">The Witcher</P>
+                                    <small style="color: white;">3 hafta önce eklendi.</small>
+                                  </div>
+                                </div>
+                              </a>
+                              <a style="text-decoration: none;" href="">
+                                <div class="kard d-flex align-content-center px-1  border: 1px solid gray;" style="width: 500px; height: 120px; ">
+                                  <div class="kard-img" style="width: 220px;">
+                                    <img src="img/lostinspace.jpg" alt="" style="width: 200px;">
+                                  </div>
+                                  <div class="kard-hakkinda text-start">
+                                    <h6 style="color: white;">Yeni İçerik</h6>
+                                    <P style="color: white;">The Lost İn Space</P>
+                                    <small style="color: white;">2 hafta önce eklendi.</small>
+                                  </div>
+                                </div>
+                              </a>
+                              <a style="text-decoration: none;" href="">
+                                <div class="kard d-flex align-content-center px-1  border: 1px solid gray;" style="width: 500px; height: 120px; ">
+                                  <div class="kard-img" style="width: 220px;">
+                                    <img src="img/lucifer.jpg" alt="" style="width: 200px;">
+                                  </div>
+                                  <div class="kard-hakkinda text-start">
+                                    <h6 style="color: white;">Yeni İçerik</h6>
+                                    <P style="color: white;">Lucifer</P>
+                                    <small style="color: white;">5 hafta önce eklendi.</small>
+                                  </div>
+                                </div>
+                              </a>
+                              <a style="text-decoration: none;" href="">
+                                <div class="kard d-flex align-content-center px-1  border: 1px solid gray;" style="width: 500px; height: 120px; ">
+                                  <div class="kard-img" style="width: 220px;">
+                                    <img src="img/valhala.jpg" alt="" style="width: 200px;">
+                                  </div>
+                                  <div class="kard-hakkinda text-start">
+                                    <h6 style="color: white;">Yeni İçerik</h6>
+                                    <P style="color: white;">Valhala</P>
+                                    <small style="color: white;">6 hafta önce eklendi.</small>
+                                  </div>
+                                </div>
+                              </a>
+                              
+                            </div>
+                          </div>
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="Right-aligned menu">
+                              <img src="img/smile-icon.jpg" style="border-radius: 5px;" width="32" height="32" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" style="background: rgba(0, 0, 0, 0.692);"> 
+                              <li><a class="dropdown-item active d-flex align-items-center"  href="#">
+                                <img src="img/smile-profil.png" width="32" height="32" alt="">
+                                <p style="color: white; margin: 0;">Sedooo</p>
+                              </a></li>
+                              <li><a class="dropdown-item" href="#">Profil Yönetimi</a></li>
+                              <li><a class="dropdown-item" href="#">Profil Aktar</a></li>
+                              <li><a class="dropdown-item" href="#">Hesap</a></li>
+                              <li><a class="dropdown-item" href="#">Yardım Merkezi</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Netflix oturumu kapat</a></li>
+                            </ul>
+                          </div>
+                    </form>
+              </div>  
+            </div>
+          </nav>
+    </header>
+    <!-- HEADER END -->
+    <!-- MAİN START -->
+    <main>
+      <div class="contanier position-relative" style="top: -100px; z-index: 0; width: 100%; height: 155vh; background: rgb(0, 0, 0);">
+        <div class="fluid">
+          <div class="main-con w-100 z-n1">
+            <div class="img">
+              <img src="img/AAAABeqNepoPbog4fYKeeIw14IQXSUTuKK5uIOJserRmkB42vKfVENjoaHd3rFwCG5pv3ahWIhR9hPnsG603bbY3mbtijEnxdimj-1I5.webp" style="width: 100%;" alt="">
+            </div>            
+              <div class="card  bg-transparent position-absolute mx-5 border-0" style="top: 150px; width: 35%; height: 60vh;">
+                <img src="img/engüclü.webp" class="card-img-top" alt="...">
+                <div class="card-body" style="font-size: 100%;">
+                  <h1 class="card-title text-white text-xl mb-4">Tüm Bölümleri Şimdi İzleyin</h1>
+                  <h5 class="card-text text-white mb-4">Mükemmel fiziğe sahip yüz yarışmacı, bir dizi zorlu mücadelenin üstesinden gelerek şampiyon olmak ve nakit para ödülünü kazanmak için yarışıyor.</h5>
+                  <div class="play-con d-flex">
+                    <a href="#" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 178px; height: 58px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                      </svg> 
+                      <p style="font-size: x-large; font-weight: 600; margin: 0; margin-left: 10px;">Oynat</p>
+                    </a>
+                    <a href="#" class="btn btn-secondary d-flex justify-content-center align-items-center" style="font-size: x-large; font-weight: 600; width: 283px; height: 58px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                      <p style="font-size: x-large; font-weight: 600; margin: 0; margin-left: 10px;">Daha Fazla Bilgi</p>  
+                    </a>
+                  </div>
+                </div>
+              </div>              
+          </div>
+        </div>
+        <!-- cAROSEL START -->
+        <div class="carosel-con position-relative w-100" style="z-index: 2; top: -100px;">
+          <div class="home-demo">       
+            <h3 style="color: white;">Gündemdekiler</h3>     
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="img/lucifer.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/lostinspace.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/saul.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/snake.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/valhala.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/walkingdead.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/wednesday.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/witcher.jpg" alt="">
+                </div>
+                </div>
+            </div>
+
+            <div class="home-demo">  
+              <h3 style="color: white;">Sürükleyiciler</h3>          
+              <div class="owl-carousel owl-theme">
+                  <div class="item">
+                      <img src="img/WhatsApp Görsel 2023-02-28 saat 16.28.28.jpg" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/WhatsApp Görsel 2023-02-28 saat 16.28.29.jpg" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/WhatsApp Görsel 2023-02-28 saat 16.28.31.jpg" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/WhatsApp Görsel 2023-02-28 saat 16.28.35.jpg" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/WhatsApp Görsel 2023-02-28 saat 16.28.47.jpg" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/WhatsApp Görsel 2023-02-28 saat 16.29.01.jpg" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/WhatsApp Görsel 2023-02-28 saat 16.29.07.jpg" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/WhatsApp Görsel 2023-02-28 saat 16.29.10.jpg" alt="">
+                  </div>
+                  </div>
+              </div>
+            </div>
+        <!-- cAROSEL END -->
+
+        </div>
+        
+        
+        </div>
+      </div>
+    </main>
+    <!-- MAİN END -->
+    <!-- FOOTER START -->
+    <footer>
+      <div class="foot-con bg-black d-flex justify-content-center align-items-center flex-column position-relative z-1 mt-5" style="top: -150px; width: 100%; height: 100%;">
+        <div class="foot bg-black">
+          <!-- SOSYAL START -->
+              <div class="p-div d-flex justify-content-start  mt-3">
+                <div class="face me-3">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: whitesmoke;" width="36" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="insta me-3">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: whitesmoke;" width="36" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="twit me-3">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: whitesmoke;" width="36" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="youtube me-3">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: whitesmoke;" width="36" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+          <!-- SOSYAL END -->
+          <!-- HELP BÖLÜM START -->
+                <div class="row ul-con d-flex justify-content-center mt-3">
+                    <ul class=" nav w-100 " >
+                        <li class="nav-item w-25">
+                        <a class="nav-link" style="padding-left: 13px ;"  href="#"><small>Sesli Betimleme</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                        <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Yardım Merkezi</small></a>
+                        </li> 
+                        <li class="nav-item w-25">
+                            <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Hediye Kartları</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                            <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Medya Merkezi</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                            <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Yatırımcı İlişkileri</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                            <a class="nav-link" style="padding-left: 13px ;" href="#"><small>İş İmkanları</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                          <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Kullanım Koşulları</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                          <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Gizlilik</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                          <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Yasal Hükümler</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                          <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Çerez Tercihleri</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                          <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Kurumsal Bilgiler</small></a>
+                        </li>
+                        <li class="nav-item w-25">
+                          <a class="nav-link" style="padding-left: 13px ;" href="#"><small>Bize Ulaşın</small></a>
+                        </li>                                                       
+                    </ul>
+                </div>
+          <!-- HELP BÖLÜM END -->
+          <!-- HİZMET KOD START -->
+                <button type="button" class="btn btn-light bg-transparent mt-3" style="border-radius: 0; color: gray;">Hizmet Kodu</button>
+          <!-- HİZMET KOD END -->
+          <!-- HİSTORY START -->
+                <div class="history d-flex justify-content-start mt-3">
+                  <div class="svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color:gray ;" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                      <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+                    </svg>
+                  </div>
+                  <div class="p" style="color:gray;"><p>1997-2023 Netfix,Inc.</p></div>
+                </div>
+          <!-- HİSTORY END -->
+          </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      var owl = $('.owl-carousel');
+          owl.owlCarousel({
+              margin: 10,
+              loop: false,
+              nav: true,
+              autoplay:false,
+              autoplayTimeout:1000,
+              responsive: {
+                  0: {
+                      items: 1
+                  },
+                  600: {
+                      items: 3
+                  },
+                  1000: {
+                      items: 6
+                  }
+              }
+          })
+
+</script>
+</body>
+</html>
