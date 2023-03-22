@@ -271,7 +271,7 @@ h3.my-profession{
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 0;
+    right: -40px;
     bottom: -25px;
 }
 .home-img::before{
@@ -281,7 +281,7 @@ h3.my-profession{
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 0;
+    left: -10px;
     top: -30px;
 }
 .home .home-img img{
