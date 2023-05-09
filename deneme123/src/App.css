@@ -1,0 +1,1751 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  color: #ffffff;
+  background: #000000;
+  overflow-x: hidden;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  font-family: "Rubik", sans-serif;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+}
+
+.text-color {
+  color: #d3d3d3 !important;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+/* NAVBAR START */
+.navbar {
+  background: linear-gradient(180deg,
+      rgba(14, 17, 21, 1) 17%,
+      rgba(14, 17, 21, 1) 31%,
+      rgba(14, 17, 21, 0.7819502801120448) 50%,
+      rgba(14, 17, 21, 0.5690651260504201) 61%,
+      rgba(14, 17, 21, 0.196516106442577) 82%,
+      rgba(14, 17, 21, 0.05926120448179273) 92%,
+      rgba(14, 17, 21, 0.01724439775910369) 100%);
+  padding-bottom: 2.2rem;
+  padding: 1% 1% 4% 2%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+
+.container-fluid {
+  width: 75%;
+  /* margin: auto; */
+}
+
+.navbar-brand span {
+  font-weight: bold !important;
+  color: #f8f9fa;
+}
+
+/* .logo {
+  width: 190px;
+  margin: 0 10px;
+} */
+.navbar a {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+
+.right {
+  border-right: 1px solid #d3d3d3;
+  border-radius: 0;
+}
+
+.student {
+  border: none;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.student:hover {
+  background-color: #000000;
+  color: #d3d3d3;
+}
+
+.student::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 1px;
+  background-color: red;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.student:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.kurumsal {
+  background-color: #181616 !important;
+}
+
+.kurumsal a:hover {
+  background-color: #000000;
+}
+
+.egitimler {
+  width: 300px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.egitimlerimiz {
+  background-color: #000000;
+  overflow-y: auto;
+  height: 70vh;
+}
+
+.student p {
+  display: inline;
+}
+
+/* NAVBAR END */
+
+/* HOME PAGE START */
+.aktif {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../public/img/carosel-1.webp");
+  background-size: cover !important;
+  background-position: center !important;
+
+}
+
+.aktif2 {
+  width: 100%;
+  height: 90vh;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.card-aos {
+  width: 300px;
+  margin: 10% 20%;
+  background-color: transparent;
+  color: white;
+}
+
+.card-aos a {
+  width: 150px !important;
+  height: 48px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  padding-top: 10px;
+}
+
+/* .card-aos .buton a{
+  display: inline;
+  width: 150px !important;
+  height: 48px;
+} */
+@media screen and (max-width:575px) {
+  .card-aos {
+    margin: auto;
+    margin-top: 510px;
+    border: transparent;
+  }
+
+  .card-aos img {
+    display: none;
+  }
+
+  .aktif {
+    background-position: 70% 0% !important;
+  }
+
+  .aktif2 {
+    background-position: 70% 0% !important;
+  }
+}
+
+/* own carousel */
+.serf-con {
+  width: 100%;
+  background-color: #191c21;
+}
+
+.carousel-serf {
+  margin: auto;
+  width: 50%;
+}
+
+.titlee {
+  margin-bottom: 20px;
+  padding: 20px
+}
+
+.imgg {
+  margin: 20px 0;
+  height: 50px;
+  object-fit: contain !important;
+}
+
+/* Spacial Start */
+.special-con {
+  width: 100%;
+}
+
+.special {
+  width: 70%;
+  margin: 60px auto;
+  background-color: transparent;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.special-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.special-img {
+  width: 60%;
+  height: 305px;
+  background-image: url("../public/img/Special/egitim-kategori-1.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width:1000px) {
+  .special {
+    flex-direction: column-reverse;
+  }
+
+  .special-text {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .special-img {
+    margin-top: 20px;
+    width: 100%;
+
+  }
+}
+
+/* spacial end */
+
+/* Kesfet Start */
+.kesfet-con {
+  width: 100%;
+  /* margin: auto; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  background-color: #191c21;
+}
+
+.kesfet-con .kesfet-fluit {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  /* display: inline; */
+}
+
+.kesfet-con .kesfet-fluit .kesfet-text {
+  width: 35%;
+}
+
+.kesfet-con .kesfet-fluit .kesfet-text .kesfet-text-3 .saat {
+  padding: 0 15px;
+}
+
+.kesfet-con .kesfet-fluit .kesfet-text .kesfet-text-3 .img {
+  width: 150px;
+  height: 110px;
+  background-image: url("../public/img/keşfet/itu.png");
+}
+
+.kesfet-con .kesfet-fluit .kesfet-anima {
+  width: 60%;
+  margin-left: 100px;
+}
+
+.kesfet-con .kesfet-fluit .kesfet-anima .ust {
+  width: 100%;
+  height: 150px;
+  background-image: url("../public/img/keşfet/keşfet-1.png");
+  background-size: cover;
+  margin: auto;
+
+}
+
+.kesfet-con .kesfet-fluit .kesfet-anima .alt {
+  margin-top: 40px;
+  width: 100%;
+  height: 425px;
+  /* background-image: url("../public/img/niçe.webp"); */
+  /* background-size: cover; */
+}
+
+.kesfet-con .kesfet-fluit .kesfet-anima .alt img {
+  width: 100%;
+  /* aspect-ratio: 16/9; */
+}
+
+@media screen and (max-width:1100px) {
+  .kesfet-con .kesfet-fluit {
+    /* display: block; */
+    flex-direction: column-reverse;
+  }
+
+  .kesfet-con .kesfet-fluit .kesfet-text {
+    width: 100%;
+  }
+
+  .kesfet-con .kesfet-fluit .kesfet-anima {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:892px) {
+  .kesfet-con .kesfet-fluit .kesfet-text {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width:721px) {
+  .kesfet-con .kesfet-fluit .kesfet-text {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width:536px) {
+  .kesfet-con .kesfet-fluit .kesfet-text {
+    margin-top: -200px;
+  }
+}
+
+
+/* Kesfet end */
+
+/* whichprog Start */
+.whichprog-con {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.whichprog-con .whichprog-fluid {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+/* whichprog Start */
+
+/* EDUCATİON START */
+.education-con {
+  background-color: #191c21;
+  /* margin-top: 30px; */
+  padding: 48px 0;
+}
+
+.education-fluid {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: left;
+  display: flex;
+}
+
+.education-text {
+  width: 40%;
+}
+
+.education-con .education-fluid .education-text .buttons .buton {
+  width: 120px;
+  height: 34px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: transparent;
+  color: white;
+}
+
+.education-con .education-fluid .education-text .buttons .sag:hover {
+  border: 1px solid red;
+  background: red;
+}
+
+.education-con .education-fluid .education-text .buttons .sol:hover {
+  border: 2px solid white;
+}
+
+.education-con .education-anima {
+  width: 60%;
+  margin-left: 60px;
+}
+
+.education-con .education-anima .iframe-con {
+  width: 100%;
+}
+
+@media screen and (max-width:1100px) {
+  .education-fluid {
+    flex-direction: column-reverse;
+  }
+
+  .education-text {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .education-con .education-anima {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* EDUCATİON END */
+
+.opcit {
+  opacity: 0 !important;
+}
+
+/* Kursiyer START */
+.kursiyer-con {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.kursiyer {
+  width: 70%;
+  margin: auto;
+}
+
+.img-kursiyer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 490px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.img-kursiyer p {
+  margin: 10px 10px;
+}
+
+.kursiyer-con button {
+  width: 139px;
+  height: 50px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.kursiyer-con .kursiyer-yorum {
+  border: 2px solid white;
+  width: fit-content;
+  margin: 50px auto;
+  padding: 4px 15px;
+}
+
+.kursiyer-con .kursiyer-yorum .yorum-text {
+  padding: 4px 16px;
+  margin-top: 20px;
+}
+
+.kursiyer-con .kursiyer-yorum h6 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+
+.kursiyer-con .kursiyer-yorum p {
+  font-size: 15px;
+  color: #a4a8ab;
+  letter-spacing: 1.1px;
+}
+
+@media screen and (max-width:900px) {
+  .kursiyer-con .buttonnn {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width:786px) {
+  .kursiyer-con .buttonnn {
+    margin-top: -250px;
+  }
+}
+
+/* Kursiyer End */
+
+/* Carousel KursiyerSays START */
+.carouselKursiyer-con {
+
+  background-color: #191c21;
+  padding: 74px 0 50px;
+}
+
+.carouselKursiyer-con h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.owl-theme {
+  width: 70%;
+  margin: auto;
+}
+
+.owl-theme .car-con .car-con-fluit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.owl-theme .car-con-text {
+  width: 55%;
+  /* height: 330px; */
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: #191c21;
+  /* position: relative; */
+  top: -40px;
+  left: 60px;
+  padding: 48px 48px 0;
+}
+
+/* .owl-theme .car-con-text p{
+  width: 70%;
+} */
+
+.pe {
+  text-decoration: 2px solid red;
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width:964px) {
+  .owl-theme .car-con {
+    display: block;
+  }
+
+  .owl-theme .car-con-text {
+    position: static;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .owl-theme .car-con .car-con-fluit {
+    flex-direction: column-reverse;
+  }
+
+  .owl-theme .car-con-text {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .owl-theme .car-con-fluit .car-con-img {
+    width: 100%;
+  }
+}
+
+/* Carousel KursiyerSays END */
+
+/* Kayıt Start */
+.kayitmain-con {
+  color: #a2a4a7;
+  padding: 24px 0 24px;
+  margin-top: 24px;
+}
+
+.kayitmain-fluit {
+  width: 70%;
+  margin: auto;
+}
+
+.kayitmain-con .kayitmain-fluit .kayitmain-kayt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kayitmain-fluit .kayitmain-kayt .kayit-text {
+  width: 40%;
+  height: 131px;
+}
+
+.kayitmain-con .kayitmain-fluit .kayitmain-input-fluit {
+  width: 40%;
+  height: 131px;
+  display: flex;
+}
+
+.kayitmain-con .kayitmain-fluit .kayitmain-input-fluit .inn {
+  width: 367px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid #a2a4a7;
+  margin-bottom: 5px;
+}
+
+.kayitmain-duyuru {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px; */
+}
+
+.ortak {
+  width: 50%;
+  height: 531px;
+}
+
+.kayitmain-duyuru .baslik-fluit {
+  width: 33%;
+}
+
+.kayitmain-duyuru .baslik {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.kayitmain-duyuru .baslik h2 {
+  color: #ffffff;
+}
+
+.kayitmain-duyuru .egitimler-fluit {
+  display: flex;
+  width: 67%;
+}
+
+.kayitmain-duyuru .baslik p {
+  color: #d2d7de;
+  text-decoration: 2px solid red;
+  text-decoration-line: underline;
+}
+
+.kayitmain-duyuru .egitimler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kayitmain-duyuru .egitimler .box1 {
+  width: 360px;
+  height: 246px;
+  background: #191c21;
+  /* margin-bottom: 10px; */
+  padding: 16px 15px;
+}
+
+.kayitmain-duyuru h6 {
+  display: inline-flex;
+  padding: 10px;
+  color: #d2d7de;
+}
+
+.kayitmain-duyuru .egitimler {
+  width: 50%;
+  height: 531px;
+}
+
+.kayitmain-duyuru .egitimler-2 {
+  background: #191c21;
+  padding: 16px 0;
+  margin-left: 20px;
+  width: 50%;
+  height: 531px;
+  /* width: 100%; */
+}
+
+.kayitmain-duyuru .egitimler-2 .imgg {
+  width: 100%;
+  height: 225px;
+}
+
+.kayitmain-duyuru .egitimler-2 h5,
+.kayitmain-duyuru .egitimler-2 p {
+  color: #ffffff;
+  padding: 10px 16px 0;
+}
+
+@media screen and (max-width: 1450px) {
+  .kayitmain-duyuru {
+    flex-direction: column;
+  }
+
+  .kayitmain-duyuru .baslik-fluit {
+    width: 100%;
+  }
+
+  .kayitmain-duyuru .baslik h2,
+  .kayitmain-duyuru .baslik p {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .kayitmain-duyuru .egitimler-fluit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .kayitmain-kayt {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .kayitmain-fluit .kayitmain-kayt .kayit-text {
+    width: 100%;
+  }
+
+  .kayitmain-fluit .kayitmain-kayt .kayitmain-input-fluit {
+    width: 100%;
+  }
+
+  .kayitmain-duyuru .egitimler-fluit {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .kayitmain-duyuru .egitimler {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    margin: 20px 0 20px;
+  }
+
+  .kayitmain-duyuru .egitimler .box1 {
+    margin: 0 10px;
+  }
+
+  .kayitmain-duyuru .egitimler-2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:870px) {
+  .kayitmain-duyuru .egitimler {
+    flex-direction: column;
+  }
+
+  .kayitmain-duyuru .egitimler .box1 {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width:510px) {
+  .kayitmain-fluit .kayitmain-kayt .kayitmain-input-fluit {
+    display: block;
+  }
+
+  .kayitmain-con .kayitmain-fluit .kayitmain-input-fluit .inn {
+    width: 100%;
+  }
+}
+
+/* Kayıt END */
+
+/* Acoordion Start */
+.accordion-con .accordion-fluid {
+  width: 70%;
+  margin: auto;
+}
+
+.accordion-con .accordion-item {
+  background: #272c33;
+  color: #ffffff !important;
+  border: none;
+}
+
+.accordion-con .accordion-button {
+  background: #272c33;
+  color: #e9e9e9;
+  border: none;
+  margin-top: 10px;
+}
+
+.accordion-con h5 {
+  margin: 20px 0;
+}
+
+/* :root{
+  --bs-accordion-btn-icon:#ffffff 
+} */
+.accordion-button::after {
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+}
+
+/* Acoordion END */
+
+/* Watch START */
+.watch-con {
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.01), rgb(0, 0, 0, 0.01)), url("../public/img/team-home.webp");
+  background-position: center;
+}
+
+.hrr {
+  margin-top: 10px;
+  width: 100%;
+  height: 2px;
+  border: 1px solid red;
+}
+
+/* Watch END */
+
+/* Footer START */
+.foot .py-5 {
+  color: white;
+}
+
+.foot .red {
+  color: white;
+  text-decoration: none;
+}
+
+.foot .red:hover {
+  color: red;
+}
+
+.foot hr {
+  top: 20px;
+  border: none;
+  height: 1px;
+  background-color: #ff002b;
+  margin-bottom: 50px;
+}
+
+.foot .svgg {
+  width: 194px;
+  height: 50px;
+  background: transparent;
+  color: #ffffff;
+  /* display: inline;  */
+}
+
+.foot .svgg p {
+  display: inline;
+}
+
+/* Footer END */
+
+/* KAYITPAGE START */
+.kayitpage-con {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kayitpage-con .kayitpage-fluit {
+  width: 498px;
+  height: 492px;
+  border: 2px solid #6c757d;
+}
+
+.kayitpage-con .kayitpage-fluit form {
+  margin: 5% auto;
+  width: 90%;
+}
+
+.kayitpage-con .kayitpage-fluit form .head-con {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kayitpage-con .kayitpage-fluit form .head-con a {
+  color: #ffffff;
+}
+
+.kayitpage-con .kayitpage-fluit form select {
+  background: transparent;
+  color: #ffffff;
+}
+
+.kayitpage-con .kayitpage-fluit form input {
+  background: transparent;
+  color: #ffffff;
+}
+
+.kayitpage-con .kayitpage-fluit form .pp {
+  margin: 20px 0;
+}
+
+.kayitpage-con .kayitpage-fluit form small {
+  font-size: 9px;
+  line-height: 13.5px;
+}
+
+/* KAYITPAGE END */
+
+/* LOGİNPAGE START */
+.loginpage-con {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../public/img/login/1.webp");
+  background-position: center;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.loginpage-con .loginpage-fluid {
+  margin-left: 7%;
+  height: 100%;
+  width: 348px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.loginpage-con .loginpage-fluid input {
+  /* margin-left: 0; */
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #676676;
+  color: #676676;
+}
+
+.loginpage-con .loginpage-fluid span {
+  padding-left: 0;
+  background: transparent;
+  border: none;
+}
+
+.loginpage-con .loginpage-fluid .form-check-input {
+  background: transparent;
+  border: 1px solid #676676;
+}
+
+.form-check-input:checked {
+  background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='white' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e) !important;
+}
+
+.loginpage-con .loginpage-fluid .btn-outline-danger {
+  width: 100%;
+  color: white;
+}
+
+.loginpage-con .loginpage-fluid .loginpage-foot .hrrr {
+  width: 100%;
+  height: 1px;
+  border: .5px solid #676676;
+}
+
+.loginpage-con .loginpage-fluid .loginpage-foot .svg-icon {
+  width: 70%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginpage-con .loginpage-fluid .loginpage-foot .svg {
+  width: 40px;
+  height: 40px;
+  background-color: #676676;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginpage-con .loginpage-fluid .loginpage-foot .svg svg:hover {
+  fill: red;
+}
+
+/* LOGİNPAGE END */
+/* TeacherPage Start */
+/* Eğitmenler start */
+/* simdi basvuru start */
+.main-con .main-fluit {
+  display: flex;
+}
+
+.main-box {
+  width: 422px;
+  /* height: 700px; */
+  background-color: rgba(12, 12, 12, 0.544);
+}
+
+.main-box2 {
+  width: 408px;
+  height: 625px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-hayaller {
+  width: 395;
+  height: 404px;
+  text-align: center;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 4px solid #00c14e;
+  color: white;
+  font-size: 3.3rem;
+}
+
+/* accordion start */
+.item_1 {
+  background-image: url("../public/img/gzd/ana1.webp")
+}
+
+.item_2 {
+  background-image: url("../public/img/gzd/ana2.webp")
+}
+
+.item_3 {
+  background-image: url("../public/img/gzd/ana3.webp")
+}
+
+.item_4 {
+  background-image: url("../public/img/gzd/ana4.webp")
+}
+
+.item_5 {
+  background-image: url("../public/img/gzd/ana5.webp")
+}
+
+.container-acc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  padding: 20px;
+
+}
+
+.accordion_gallery {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  flex-direction: row;
+  line-height: 1.6em;
+  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.54);
+}
+
+.items {
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  flex: 1 1 0%;
+  overflow: hidden;
+  transition: flex .4s;
+}
+
+.items:hover {
+  flex: 3 1 15%;
+}
+.content * {
+  visibility: hidden;
+  opacity: 0;
+  transform-style: preserve-3d;
+}
+.items:hover .content * {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  transition: all .3s;
+}
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+  z-index: 1;
+  visibility: hidden;
+}
+.items:hover .content {
+  visibility: visible;
+}
+.title {
+  font-size: 65px;
+  text-transform: capitalize;
+  transform: translate3d(0, -60px, 0);
+  line-height: 1;
+}
+/* accordion End */
+@media screen and (max-width:1200px) {
+  .main-con .main-fluit {
+    flex-direction: column-reverse;
+  }
+
+  .main-box {
+    margin: auto;
+  }
+
+  .main-box2 {
+    width: 100%;
+  }
+
+  .main-hayaller {
+    width: 100%;
+    height: 50%;
+  }
+
+  .main-hayaller h1 {
+    display: inline-block;
+    width: 450px !important;
+    /* margin: 0 !important;
+  padding: 0 !important; */
+  }
+}
+@media screen and (max-width:460px) {
+  .main-hayaller h1 {
+    width: 100% !important;
+  }
+  .main-box {
+    width: 100%;
+  }
+}
+/* eğitmenler start */
+.egitmen-con {
+  width: 100%;
+}
+.egitmen-con .egitmen-fluit {
+  width: 70%;
+  margin: auto;
+}
+.egitmen-con .egitmen-fluit .card {
+  width: 100%;
+  height: 344px;
+  border: 2px solid gray;
+}
+@media screen and (max-width:640px) {
+  .egitmen-con .egitmen-fluit {
+    width: 100%;
+  }
+  .egitmen-con .egitmen-fluit .card {
+    height: 400px;
+  }
+}
+/* eğitmenler end */
+/* TeacherPage End */
+/* Hakkımızda Page Start */
+.about-section {
+  background-image: url("../public/img/bilginet/bilginet/ekibimiz/team.webp");
+  height: 440px !important;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 180px;
+  /* background: linear-gradient(0deg, #00000000 0, transparent 100%, transparent) */
+  margin-bottom: 50px;
+  width: 100% !important;
+}
+.hak {
+  position: relative;
+  transition: all 1s ease;
+  transform: scaleX(1);
+}
+.hak::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  border: 0.1px solid #f24462;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(1);
+  transition: all 1s ease;
+}
+.hak:hover::after {
+  width: 90%;
+  transition: all 1s ease;
+  transform: scaleX(1);
+}
+h1 {
+  color: white;
+}
+.row {
+  background: #000;
+}
+.col-xl-7>h2 {
+  color: white;
+}
+.col-xl-7>p {
+  color: white;
+}
+.uni {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191C21;
+  height: 309px;
+  padding-left: 50px;
+}
+.uni>.inner {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.paragraf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragraf>p {
+  width: 70%;
+  font-size: 25px;
+}
+.deger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-area-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-area-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.misyon-vizyon {
+  height: 360px;
+}
+.misyon {
+  background-image: url("../public/img/bilginet/bilginet/hakkimizda/misyonumuz.webp");
+  color: white;
+  text-align: end;
+  font-size: 18px;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+.vizyon {
+  background-image: url("../public/img/bilginet/bilginet/hakkimizda/vizyonumuz.webp");
+  color: white;
+  font-size: 18px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.top {
+  width: 100%;
+}
+.inner-right {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 50%;
+  padding-left: 50px;
+  color: white;
+}
+.inner-right h3 {
+  font-size: 30px;
+}
+.bottom {
+  display: flex;
+  padding-top: 50px;
+}
+.inner-left2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  /* width: 30%; */
+  padding-left: 50px;
+  color: white;
+}
+.inner-left2 h3 {
+  font-size: 30px;
+}
+.team-container {
+  background: #000;
+}
+.ekip {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.team {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.team-1 {
+  background-image: url("../public/img/bilginet/bilginet/hakkimizda/mustafa-yelbey.webp");
+  width: 360px;
+  height: 495px;
+  align-items: end;
+  justify-content: center;
+  margin-right: 30px;
+  transition: all ease-out 1s;
+}
+.team-1:hover {
+  font-size: 0px;
+  transition: all ease-out 1s;
+}
+.team-1:hover>h5 {
+  font-size: 0px;
+  transition: all ease-in 1s;
+}
+.team-2 {
+  background-image: url("../public/img/bilginet/bilginet/hakkimizda/mustafa-candar.webp");
+  width: 360px;
+  height: 495px;
+  align-items: end;
+  justify-content: center;
+  margin-right: 30px;
+}
+.team-2:hover {
+  font-size: 0px;
+  transition: all ease-out 1s;
+}
+.team-2:hover>h5 {
+  font-size: 0px;
+  transition: all ease-in 1s;
+}
+.team-3 {
+  background-image: url("../public/img/bilginet/bilginet/hakkimizda/ramazan-basan.webp");
+  width: 360px;
+  height: 495px;
+  align-items: end;
+  justify-content: center;
+}
+.team-3:hover {
+  font-size: 0px;
+  transition: all ease-out 1s;
+}
+.team-3:hover>h5 {
+  font-size: 0px;
+  transition: all ease-in 1s;
+}
+.default-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 17px 5px;
+  line-height: 1;
+  transition: 0.3s;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 5px;
+  width: 156px;
+  background-color: #f24462;
+}
+.text-1 {
+  color: white;
+}
+.py-5 {
+  color: white;
+}
+
+.red {
+  color: white;
+  text-decoration: none;
+}
+.red:hover {
+  color: red;
+}
+hr {
+  top: 20px;
+  border: none;
+  height: 1px;
+  background-color: #ff002b;
+  margin-bottom: 50px;
+}
+@media screen and (max-width:900px) {
+  .about-section {
+    width: 90vw
+  }
+  .misyon-vizyon {
+    flex-direction: column;
+    width: 100%;
+  }
+  .vizyon {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  .misyon {
+    width: 100%;
+    display: block;
+  }
+  .uni,
+  .inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-1,
+  .logo-2,
+  .logo-3 {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    object-fit: none;
+  }
+  .paragraf {
+    padding-top: 150px;
+  }
+  .logo-area-1,
+  .left-top,
+  .right-top,
+  .text_1,
+  .text_2 {
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .logo-area-1 {
+    height: 200px;
+    margin-bottom: 100px;
+  }
+  .left-top {
+    width: 100%;
+    display: block;
+  }
+  .right-top {
+    width: 100%;
+    display: block;
+  }
+  .logo-area-2,
+  .left-bottom,
+  .right-bottom,
+  .text_3,
+  .text_4 {
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .logo-area-2 {
+    height: 200px;
+  }
+  .logo_1,
+  .logo_2,
+  .logo_4 {
+    height: 72px;
+    width: 64px;
+  }
+  .logo_3 {
+    width: 65px !important;
+    height: 55px !important;
+  }
+  .top {
+    width: 100%;
+    padding-top: 200px;
+  }
+  .inner-left,
+  .inner-right2 {
+    display: none;
+  }
+  .inner-left2,
+  .inner-right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .team {
+    flex-direction: column;
+  }
+  .team-1,
+  .team-2 {
+    margin-bottom: 20px;
+  }
+  .team-3 {
+    margin-right: 30px;
+  }
+  .bursa,
+  .balikesir,
+  .eskisehir,
+  .izmir {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:700px) {
+  .inner {
+    margin-top: 100px;
+  }
+  .paragraf {
+    padding-top: 200px;
+  }
+  .team {
+    flex-direction: column;
+  }
+  .team-1,
+  .team-2 {
+    margin-bottom: 20px;
+  }
+  .team-3 {
+    margin-right: 30px;
+  }
+  .bursa,
+  .balikesir,
+  .eskisehir,
+  .izmir {
+    flex-direction: column;
+  }
+}
+
+/* ----  Main Style  ----*/
+
+.ekibimiz-head{
+  background-image: url("../public/img/bilginet/bilginet/ekibimiz/team.webp");
+  height: 440px !important;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 180px;
+  margin-bottom: 50px;
+}
+  .title-underline{
+    color: white;
+    transition: all 1s ease;
+    transform: scaleX(1);
+  }
+  .title-underline::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    border: 0.1px solid #f24462;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(1);
+    transition: all 1s ease;
+  }
+  .title-underline:hover::after{
+    width: 90%;
+    transition: all 1s ease;
+    transform: scaleX(1);
+  }
+  
+  .container{
+    width: 60%;
+    display: flex;
+    background: #191C21;
+    border-radius: 1%;
+  }
+  .left-ekip{
+    width: 30%;
+  }
+  .right-ekip{
+    width: 70%;
+    padding-top: 70px;
+    color: white;
+  }
+  .right-alt{
+    margin-left: 60%;
+  }
+  .team-container{
+    background: #000;
+}
+.ekip{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.team{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.team-1{
+    background-image: url("../public/img/bilginet/bilginet/ekibimiz/mustafa-yelbey.webp");
+    width: 360px;
+    height: 495px;
+    align-items: end;
+    justify-content: center;
+    margin-right: 30px;
+    transition: all ease-out 1s;
+}
+.team-1:hover{
+    font-size: 0px;
+    transition: all ease-out 1s; 
+}
+.team-1:hover>h5{
+    font-size: 0px;
+    transition: all ease-in 1s;
+}
+.team-2{
+    background-image: url("../public/img/bilginet/bilginet/ekibimiz/mustafa-candar.webp");
+    width: 360px;
+    height: 495px;
+    align-items: end;
+    justify-content: center;
+    margin-right: 30px;
+}
+.team-2:hover{
+  font-size: 0px;
+  transition: all ease-out 1s; 
+}
+.team-2:hover>h5{
+  font-size: 0px;
+  transition: all ease-in 1s;
+}
+.team-3{
+    background-image: url("../public/img/bilginet/bilginet/ekibimiz/ramazan-basan.webp");
+    width: 360px;
+    height: 495px;
+    align-items: end;
+    justify-content: center;
+}
+.team-3:hover{
+  font-size: 0px;
+  transition: all ease-out 1s;
+}
+.team-3:hover>h5{
+  font-size: 0px;
+  transition: all ease-in 1s;
+}
+.container-1{
+  width: 75%;
+  /* display: flex; */
+  flex-wrap: wrap;
+  /* background: #191C21; */
+  border-radius: 1%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8%;
+}
+.card{
+  position: relative;
+  overflow: hidden;
+}
+.card:hover .card-img-overlay{
+  bottom: -120px;
+}
+.card-img-overlay{
+  text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+}
+h2,p,h1,h3,h4,h5,h6{
+  color: white !important;
+}
+.py-5{
+  color: white;
+}
+.red{
+  color: white;
+  text-decoration: none;
+}
+.red:hover{
+  color: red;
+}
+hr{
+  top: 20px;
+  border: none;
+  height: 1px;
+  background-color: #ff002b;
+  margin-bottom: 50px;
+}
+.ekibimiz-head .h5,p{
+  font-size: 16px !important;
+}
+@media screen and (max-width:900px) {
+  .left-ekip{
+    display: none;
+  }
+  .right-ekip{
+    width: 100%;
+    display: block;
+  }
+  .resim{
+    width: 100%;
+    height: 100%;
+  }
+  .team{
+    /* display: block; */
+    flex-direction: column;  
+  }
+  .team-1,.team-2{
+    margin-bottom: 20px;
+  }
+  .team-3{
+    margin-right: 30px;
+  }
+  .text-1-1{
+    width: 100%;
+  }
+  .bursa,.balikesir,.eskisehir,.izmir{
+    flex-direction: column;
+  }
+}
