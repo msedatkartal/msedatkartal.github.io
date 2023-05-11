@@ -6,7 +6,6 @@ import LoginPage from "./pages/LoginPage";
 import Teachers from "./pages/Teachers";
 import HakkimizdaPage from "./pages/HakkimizdaPage";
 import EkibimizPage from "./pages/EkibimizPage";
-
 function App() {
   return (
     <>
@@ -23,5 +22,4 @@ function App() {
     </>
   );
 }
-
 export default App;

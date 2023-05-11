@@ -4,9 +4,9 @@ function Footer() {
     return (
         <>
         <div className="hrr"></div>
-            <div className="py-5 bg-tra d-flex foot" style={{ margin: "auto" }}>
+            <div className="py-5 d-flex foot" style={{ margin: "auto" }}>
                 <hr />
-                <div className="row bg-black text-center" style={{ margin: "auto" }}>
+                <div className="row bg-black" style={{ margin: "auto" }}>
                     <div className="col-6 col-md-2 mb-3">
                         <h5 style={{ color: "gray" }}>Keşfet</h5>
                         <ul className="nav flex-column">

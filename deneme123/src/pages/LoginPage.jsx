@@ -28,7 +28,9 @@ function LoginPage() {
                         <div className="loginpage-con">
                             <div className="loginpage-fluid">
                                 <div className="loginpage-head">
+                                    <a href="/">
                                     <img src="img/header-logo.png" alt="" />
+                                    </a>
                                 </div>
                                 <form className="row g-3 bg-transparent needs-validation" noValidate>
                                     <h4>Hoş Geldiniz</h4>
@@ -120,7 +122,9 @@ function LoginPage() {
                                     <div className="loginpage-con" style={{ backgroundImage: `url(${login?.imgurl})` }}>
                                         <div className="loginpage-fluid">
                                             <div className="loginpage-head">
+                                                <a href="/">
                                                 <img src="img/header-logo.png" alt="" />
+                                                </a>
                                             </div>
                                             <form className="row g-3 needs-validation bg-transparent" noValidate>
                                                 <h4>Hoş Geldiniz</h4>

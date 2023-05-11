@@ -4,7 +4,7 @@ function Card( {card} ) {
     return (
         <>
             <div className="card egitimler mb-3">
-                <div className="row g-0">
+                <div className="d-flex">
                     <div className="col-md-2" style={{margin:"auto", width:"25%"}}>
                         <img src= {card.imgurl} className="img-fluid rounded-start" alt= {card.title} />
                     </div>

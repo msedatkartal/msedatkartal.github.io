@@ -5,10 +5,9 @@ function Education({ educations }) {
         <>
             <div className="education-con w-100 text-center" >
                 <h2 >EĞİTİMLERİMİZ</h2>
-                <hr />
+                <div className="hrrrr" style={{margin:"auto",width:"70%",height:"1px",background:"#676676"}}></div>
                 {
                     educations?.map(education => {
-                        // console.log(education.id);
                         return (
                             <>
                                 <div className="education-fluid" style={{ padding: "48px 15px 0" }}>
@@ -28,16 +27,10 @@ function Education({ educations }) {
                                     <div className="education-anima">
                                         <div className="iframe-con">
                                             <img src= {education?.imgurl} style={{width:"100%",objectFit:"fill"}} alt="" />
-                                            {/* {education?.iframe} */}
-                                            {/* <iframe src="https://player.vimeo.com/video/699771484?h=5d2e452ceb&amp;title=0&amp;byline=0&amp;autopause=0&amp;app_id=122963" width="550" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" title="Uluslararası ISO 9001 Baş Denet&amp;ccedil;i Eğitimi" data-ready="true"></iframe> */}
                                         </div>
-
                                     </div>
-
-
                                 </div>
-                                <hr />
-
+                                <div className="hrrrr" style={{margin:"20px auto ",width:"70%",height:"1px",background:"#676676"}}></div>
                             </>
                         )
                     })

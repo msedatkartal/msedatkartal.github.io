@@ -3,9 +3,16 @@ import Carousel from './Carousel';
 
 function Carousels() {
     const carousel_list = [
-       
         {
-            id:2,
+            id:0,
+            text:"OĞUZ HAKAN AKSU İLE",
+            title:"Uluslararası ISO 14001:2015 Baş Denetçi Eğitimi",
+            imgurl:"img/carosel-1.webp",
+            imgurle:"img/egitmen-1.png",
+            slide:"Slide 2"
+        },
+        {
+            id:1,
             text:"HAMDİ DİLMENLER İLE",
             title:"Uluslararası ISO 14001:2015 Baş Denetçi Eğitimi",
             imgurl:"img/carosel-2.webp",
@@ -13,7 +20,7 @@ function Carousels() {
             slide:"Slide 2"
         },
         {
-            id:3,
+            id:2,
             title:"Uluslararası ISO 27001:2022 Baş Denetçi Eğitimi" ,
             text: "MİRZE MİRZEOĞLU İLE" ,
             imgurl: "img/carosel-3.webp",
@@ -21,7 +28,7 @@ function Carousels() {
             slide:"Slide 3"
         },
         {
-            id:4,
+            id:3,
             title:"Uluslararası ISO 22000:2018 Baş Denetçi Eğitimi" ,
             text: "TÜLİN AY İLE" ,
             imgurl: "img/carosel-4.webp",
@@ -29,7 +36,7 @@ function Carousels() {
             slide:"Slide 4"
         },
         {
-            id:5,
+            id:4,
             title:"Uluslararası ISO 9001:2015 Baş Denetçi Eğitimi" ,
             text: "HAMDİ DİLMENLER İLE" ,
             imgurl: "img/carosel-5.webp",
@@ -37,7 +44,7 @@ function Carousels() {
             slide:"Slide 5"
         },
         {
-            id:6,
+            id:5,
             title:"Köpek Eğitmenliği Eğitimi" ,
             text: "ŞEMSEDDİN ŞAYAN İLE" ,
             imgurl: "img/carosel-6.webp",
@@ -45,7 +52,7 @@ function Carousels() {
             slide:"Slide 6"
         },
         {
-            id:7,
+            id:6,
             title:"Köpek Eğitimi" ,
             text: "ŞEMSEDDİN ŞAYAN İLE" ,
             imgurl: "img/carosel-7.webp",
@@ -53,7 +60,7 @@ function Carousels() {
             slide:"Slide 7"
         },
         {
-            id:8,
+            id:7,
             title:"Bebek Spa ve Masajı Eğitimi" ,
             text: "SEVİLAY KURT İLE" ,
             imgurl: "img/carosel-8.webp",
@@ -61,7 +68,7 @@ function Carousels() {
             slide:"Slide 8"
         },
         {
-            id:9,
+            id:8,
             title:"Proje Yönetimi ve Hibe/Fon Kaynakları Eğitimi" ,
             text: "DOÇ. DR. OĞUZ DEMİR / DR. İSMAİL DURGUN İLE" ,
             imgurl: "img/carosel-9.webp",
@@ -69,7 +76,7 @@ function Carousels() {
             slide:"Slide 9"
         },
         {
-            id:10,
+            id:9,
             title:"Bebek Bakımı Eğitimi" ,
             text: "GÜL ERTEM / SEVİLAY KURT İLE" ,
             imgurl: "img/carosel-10.webp",
@@ -77,7 +84,7 @@ function Carousels() {
             slide:"Slide 10"
         },
         {
-            id:11,
+            id:10,
             title:"Uluslararası ISO 9001:2015 Baş Denetçi Eğitimi" ,
             text: "HÜLYA YALÇIN / DR. İSMAİL DURGUN İLE" ,
             imgurl: "img/carosel-11.webp",
@@ -85,7 +92,7 @@ function Carousels() {
             slide:"Slide 11"
         },
         {
-            id:12,
+            id:11,
             title:"Oyun Terapisi Eğitimi " ,
             text: "FUNDEM ECE İLE" ,
             imgurl: "img/carosel-12.webp",
@@ -93,7 +100,7 @@ function Carousels() {
             slide:"Slide 12"
         },
         {
-            id:13,
+            id:12,
             title:"Masal Terapisi Eğitimi" ,
             text: "TUĞÇE İNKAYA / MELTEM CIBIR İLE" ,
             imgurl: "img/carosel-13.webp",
@@ -101,7 +108,7 @@ function Carousels() {
             slide:"Slide 13"
         },
         {
-            id:14,
+            id:13,
             title:"Öğrenci Koçluğu Eğitimi" ,
             text: "ZAFER POLAT KOYUNCU İLE" ,
             imgurl: "img/carosel-14.webp",
@@ -109,7 +116,7 @@ function Carousels() {
             slide:"Slide 14"
         },
         {
-            id:15,
+            id:14,
             title:"Yaşam Koçluğu Eğitimi" ,
             text: "IŞILAY ARTUT İLE" ,
             imgurl: "img/carosel-15.webp",
@@ -117,7 +124,7 @@ function Carousels() {
             slide:"Slide 15"
         },
         {
-            id:16,
+            id:15,
             title:"Robotik ve Kodlama Eğitimi" ,
             text: "ABDULLAH KILIÇASLAN / MERT GÜLER / OZAN DAMCI İLE" ,
             imgurl: "img/carosel-16.webp",
